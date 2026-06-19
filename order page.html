@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Kings Bakery - Order Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f5f2;
+        }
+
+        header {
+            background: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #c97a2b;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .btn {
+            background: #e67e22;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1608198093002-ad4e005484ec') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            width: 100px;
+            border-radius: 10px;
+        }
+        
+        .button {
+            background: #e67e22;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        .card img {
+            width: 75%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #f99a00;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .menu-item {
+            margin-bottom: 20px;
+        }
+        .container{
+    display:flex;
+    gap:20px;
+    }
+
+    @media (max-width:768px){
+
+    nav{
+        text-align:center;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .container{
+        flex-direction:column;
+    }
+
+    body{
+        font-size:16px;
+    }
+}
+
+    @media (max-width:480px){
+
+    header{
+        padding:20px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    body{
+        font-size:14px;
+    }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Fresh Kings Bakery</h1>
+        <nav>
+            <a href="home.html2.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="order page.html">Order Online</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+</header>
+
+<section>
+    <img src="images/price.list.jpeg" alt="Price List" width="400px" height="400px">
+</section>
+
+<main>
+    <h2>Order Online</h2>
+        <form id="order-form">
+
+            <div class="menu-item">
+                <input type="checkbox" id="bread" name="items" value="Bread">
+                <label for="bread">White Bread - <span class="price">R18.00</span></label>
+                <label for="bread-qty">Quantity:</label>
+                <input type="number" id="bread-qty" name="bread-qty" min="1" value="1">
+            </div>
+
+            <div>
+                <input type="checkbox" id="bread" name="items" value="Bread">
+                <label for="bread">Brown Bread - <span class="price">R20.00</span></label>
+                <label for="bread-qty">Quantity:</label>
+                <input type="number" id="bread-qty" name="bread-qty" min="1" value="1">
+            </div>
+            
+            <div>
+                <input type="checkbox" id="muffin" name="items" value="Bread">
+                <label for="muffin">Muffin - <span class="price">R16.00</span></label>
+                <label for="muffin-qty">Quantity:</label>
+                <input type="number" id="muffin-qty" name="muffin-qty" min="1" value="1">
+            </div>
+
+            <div>
+                <input type="checkbox" id="donut" name="items" value="Bread">
+                <label for="donut">Donut - <span class="price">R12.00</span></label>
+                <label for="donut-qty">Quantity:</label>
+                <input type="number" id="donut-qty" name="donut-qty" min="1" value="1">
+            </div>
+
+            <div>
+                <input type="checkbox" id="trey bake" name="items" value="Bread">
+                <label for="trey bake">Trey Bake - <span class="price">R18.00</span></label>
+                <label for="trey bake-qty">Quantity:</label>
+                <input type="number" id="trey bake-qty" name="trey bake-qty" min="1" value="1">
+            </div>
+
+            <div>
+                <input type="checkbox" id="chicken pie" name="items" value="Bread">
+                <label for="chicken pie">Chicken Pie - <span class="price">R22.00</span></label>
+                <label for="chicken pie-qty">Quantity:</label>
+                <input type="number" id="chicken pie-qty" name="chicken pie-qty" min="1" value="1">
+            </div>
+
+            <div>
+                <input type="checkbox" id="sausage roll" name="items" value="Bread">
+                <label for="sausage roll">Sausage Roll - <span class="price">R18.00</span></label>
+                <label for="sausage roll-qty">Quantity:</label>
+                <input type="number" id="sausage roll-qty" name="sausage roll-qty" min="1" value="1">
+            </div>
+
+            <div>
+                <input type="checkbox" id="whole wheat bread" name="items" value="Bread">
+                <label for="whole wheat bread">Whole Wheat Bread - <span class="price">R26.00</span></label>
+                <label for="whole wheat bread-qty">Quantity:</label>
+                <input type="number" id="whole wheat bread-qty" name="whole wheat bread-qty" min="1" value="1">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="cake" name="items" value="Cake">
+                <label for="cake">Cake - <span class="price">R280.00</span></label>
+                <label for="cake-qty">Quantity:</label>
+                <input type="number" id="cake-qty" name="cake-qty" min="1" value="1">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="baguette" name="items" value="Baguette">
+                <label for="baguette">Baguette - <span class="price">R14.50</span></label>
+                <label for="baguette-qty"> Quantity:</label>
+                <input type="number" id="baguette-qty" name="baguette-qty" min="1" value="1">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="sourdough" name="items" value="Sourdough">
+                <label for="sourdough">Sourdough Bread - <span class="price">R26.00</span></label>
+                <label for="sourdough-qty"> Quantity:</label>
+                <input type="number" id="sourdough-qty" name="sourdough-qty" min="1" value="1">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="croissant" name="items" value="Croissant">
+                <label for="croissant">Croissant - <span class="price">R16.00</span></label>
+                <label for="croissant-qty">Quantity:</label>
+                <input type="number" id="croissant-qty" name="croissant-qty" min="1" value="1">
+            </div>
+        </form>
+
+        <button class="btn" type="button" id="submit-order-btn">Submit Order</button>
+        
+        <section>
+            <h2>Order Summary</h2>
+            <div id="order-summary">
+                <!-- Order summary will be displayed here -->
+            </div>
+        </section>
+
+        <!-- JavaScript Functionality -->
+        <script>
+            document.getElementById('submit-order-btn').addEventListener('click', function() {
+                const orderSummary = document.getElementById('order-summary');
+                orderSummary.innerHTML = ''; // Clear previous summary
+
+                const items = document.querySelectorAll('input[name="items"]:checked');
+                if (items.length === 0) {
+                    orderSummary.innerHTML = '<p>Please select at least one item to order.</p>';
+                    return;
+                }
+
+                let totalPrice = 0;
+                items.forEach(item => {
+                    const itemName = item.value;
+                    const quantityInput = document.getElementById(`${item.id}-qty`);
+                    const quantity = parseInt(quantityInput.value);
+                    let pricePerUnit = 0;
+
+                    switch (itemName) {
+                        case 'Bread':
+                            pricePerUnit = 18.00;
+                            break;
+                        case 'Cake':
+                            pricePerUnit = 280.00;
+                            break;
+                        case 'Baguette':
+                            pricePerUnit = 14.50;
+                            break;
+                        case 'Sourdough':
+                            pricePerUnit = 26.00;
+                            break;
+                        case 'Croissant':
+                            pricePerUnit = 16.00;
+                            break;
+                        case 'Muffin':
+                            pricePerUnit = 16.00;
+                            break;
+                        case 'Donut':
+                            pricePerUnit = 12.00;
+                            break;
+                        case 'Trey Bake':
+                            pricePerUnit = 18.00;
+                            break;
+                        case 'Chicken Pie':
+                            pricePerUnit = 22.00;
+                            break;
+                        case 'Sausage Roll':
+                            pricePerUnit = 18.00;
+                            break;
+                        case 'Whole Wheat Bread':
+                            pricePerUnit = 26.00;
+                            break;
+
+                    }
+
+                    const itemTotal = pricePerUnit * quantity;
+                    totalPrice += itemTotal;
+
+                    const itemSummary = document.createElement('p');
+                    itemSummary.textContent = `${itemName} x ${quantity} - R${itemTotal.toFixed(2)}`;
+                    orderSummary.appendChild(itemSummary);
+                });
+
+                const totalSummary = document.createElement('p');
+                totalSummary.textContent = `Total Price: R${totalPrice.toFixed(2)}`;
+                orderSummary.appendChild(totalSummary);
+            });
+        </script>
+</main>
+
+
+<footer>
+    <p>&copy; 2024 Fresh Kings Bakery. All rights reserved.</p>
+</footer>
+</body>
+</html>
